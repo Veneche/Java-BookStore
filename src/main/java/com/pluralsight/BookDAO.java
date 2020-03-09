@@ -98,7 +98,7 @@ public class BookDAO {
 		try {
 			PreparedStatement statement = jdbcConnection.prepareStatement(sql);
 			statement.setString(1, book.getTitle());
-			statement.setString(1, book.getAuthor());
+			statement.setString(2, book.getAuthor());
 			statement.setFloat(3, book.getPrice());
 			statement.setInt(4, book.getId());
 			
